@@ -5,7 +5,7 @@ let segundoTrimestre = parseInt(prompt("Ingrese la nota del segundo trimestre (1
 let tercerTrimestre = parseInt(prompt("Ingrese la nota del tercer trimestre (1-10.)"));
 
 
-promedio = (primerTrimestre + segundoTrimestre + tercerTrimestre)/ 3
+let promedio = (primerTrimestre + segundoTrimestre + tercerTrimestre)/ 3
 
 if (promedio > 0 && promedio < 4) {
     console.log("Nota Insuficiente");
