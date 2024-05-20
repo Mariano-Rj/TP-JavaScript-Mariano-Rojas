@@ -28,7 +28,7 @@ function mostrarMenu() {
                 alert("Opcion no valida")
                 break;
         }
-        listaVertical = parseInt(prompt(listaMenu.join("\n")));
+        listaVertical = parseInt(prompt(listaTarea.join("\n")));
     }
 }
 
