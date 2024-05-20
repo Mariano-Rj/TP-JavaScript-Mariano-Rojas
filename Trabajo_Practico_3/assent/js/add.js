@@ -48,14 +48,14 @@ function listarTareas() {
     }else {
         let lista = "Lista de Tareas:\n";
         tareas.forEach((tareas, index) => {2
-            lista += `$(index + 1}. $(tarea)\n`;
+            lista += `${index + 1}. ${tareas}\n`;
         });
         alert(lista);
     }
 }
 
 function editarTarea() {
-    listaTarea();
+    listarTareas();
     let numero = parseInt(prompt("Ingrese el numero de la tarea que editar: "));
     let indice = numero - 1;
     if (indice >= 0 && indice< tareas.length) {
@@ -72,7 +72,7 @@ function editarTarea() {
 }
 
 function eliminarTarea() {
-    listaTarea(); 
+    listarTareas(); 
     let numero = parseInt(prompt("Ingrese el numero de la tarea que eliminar"));
     let indice = numero - 1;
     if (indice >= 0 && indice< tareas.length) {
