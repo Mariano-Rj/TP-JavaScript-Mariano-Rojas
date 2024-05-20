@@ -54,8 +54,23 @@ function listarTareas() {
     }
 }
 
+function editarTarea() {
+    listaTarea();
+    let numero = parseInt(prompt("Ingrese el numero de la tarea que editar: "));
+    let indice = numero - 1;
+    if (indice >= 0 && indice< tareas.length) {
+        let nuevaTarea = prompt("Ingrese el nuevo nombre de la tarea:");
+        if (nuevaTarea && nuevaTarea.trim()) {
+            tareas[indice]= nuevaTarea;
+            alert("Tarea actualizada");
+        }else {
+            alert("Ingrese un nombre de tarea valido");
+        }
+    }else {
+        alert("Numero de tarea invalido")
+    }
+}
 
 
 
-
-mostrarMenu()
+mostrarMenu();
