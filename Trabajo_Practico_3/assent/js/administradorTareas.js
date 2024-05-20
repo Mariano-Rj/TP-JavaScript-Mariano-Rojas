@@ -71,6 +71,19 @@ function editarTarea() {
     }
 }
 
-
+function eliminarTarea() {
+    listaTarea(); 
+    let numero = parseInt(prompt("Ingrese el numero de la tarea que eliminar"));
+    let indice = numero - 1;
+    if (indice >= 0 && indice< tareas.length) {
+        let confirmar = confirm(`¿Esta seguro que desea eliminar la tarea "${tareas[indice]}"?`)
+        if (confirmar) {
+            let tareaEliminada = tareas.splice(indice, 1);
+            alert(`Tarea "${tareaEliminada}" eliminada.`)
+        }
+    }else {
+        alert("Numero de tarea invalido");
+    }
+}
 
 mostrarMenu();
