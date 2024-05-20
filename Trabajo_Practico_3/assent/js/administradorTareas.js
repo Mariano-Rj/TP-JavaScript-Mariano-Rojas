@@ -42,6 +42,17 @@ function agregarTarea(){
     }
 }
 
+function listarTareas() {
+    if (tareas.length === 0) {
+        alert("No hay tareas en la lista");
+    }else {
+        let lista = "Lista de Tareas:\n";
+        tareas.forEach((tareas, index) => {2
+            lista += `$(index + 1}. $(tarea)\n`;
+        });
+        alert(lista);
+    }
+}
 
 
 
