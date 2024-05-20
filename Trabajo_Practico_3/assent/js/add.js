@@ -35,7 +35,7 @@ function mostrarMenu() {
 function agregarTarea(){
     let tarea = prompt("Ingrese una tarea: ");
     if (tarea && tarea.trim()) {
-        tarea.push(tarea);
+        tareas.push(tarea);
         alert("Tarea agregada: "+ tarea)
     }else {
         alert("ingrese una tarea valida");
